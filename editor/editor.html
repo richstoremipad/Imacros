@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>iMacros Editor</title>
+    <link rel="stylesheet" type="text/css"
+          href="../skin/common.css" />
+    <link rel="stylesheet" type="text/css"
+          href="../skin/editor.css" />
+    <script src="../utils.js"></script>
+    <script src="editor.js"></script>
+  </head>
+  <body>
+    <iframe id="editbox" src="editarea/imacro.html"></iframe>
+    <div id="buttonpack">
+      <div id="save-button" class="button"
+           onclick="saveAndQuit()">
+        <span>Save & Close</span>
+      </div>
+      <div id="saveas-button" class="button"
+           onclick="saveAsAndQuit()">
+        <span>Save As & Close</span>
+      </div>
+      <div id="cancel-button" class="button"
+           onclick="cancel()">
+        <span>Cancel</span>
+      </div>
+    </div>
+  </body>
+</html>
