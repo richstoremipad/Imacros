@@ -1,0 +1,73 @@
+<html>
+  <head><title>iMacros Preferences</title></head>
+  <script type="text/javascript" src="utils.js"> </script>
+  <script type="text/javascript" src="options.js"> </script>
+  <link rel="stylesheet" type="text/css"
+        href="skin/common.css" />
+  <link rel="stylesheet" type="text/css"
+        href="skin/options.css" />
+  <body>
+    <span id="title">iMacros Preferences</span>
+    <div id="common" class="settings-container">
+      <span>Common settings</span>
+      <div id="before-play-box">
+        <input id="show-before-play-dialog" type="checkbox"
+               onchange="on_BP_change();"/>
+        <span> Show Edit Dialog for Bookmarks
+          <a href="javascript:link('http://wiki.imacros.net/iMacros_for_Chrome#iMacros_as_Bookmarklets')">
+            (More Info)
+          </a>
+        </span>
+      </div>
+    </div>
+    <div id="security" class="settings-container">
+      <span>Security settings</span>
+      <div style="margin-top: 10px">
+        &nbsp;A master password is used to encrypt and decrypt all stored 
+        website passwords. The websites passwords are encrypted using strong 
+        encryption and stored inside the macro text file.
+      </div>
+      <div id="type_no-box" class="radio-container">
+        <input type="radio" id="type_no" name="encryption_type"
+               onchange="onSecurityChage(event)"/>
+        	Do not encrypt passwords
+        <div class="radio-description">
+          Passwords are stored as plain text in the macros.</div>
+      </div>
+      <div id="type_stored-box" class="radio-container">
+        <input type="radio" id="type_stored" name="encryption_type"
+               onchange="onSecurityChage(event)"/>
+          Enter master password here to store it.
+        <div class="radio-description">
+          Enter master password to store:
+          <input type="password" id="stored-password"
+                 onchange="onPasswordChange()"/>
+        </div>
+      </div>
+      <div id="type_tmpkey-box" class="radio-container">
+        <input type="radio" id="type_tmpkey" name="encryption_type"
+               onchange="onSecurityChage(event)"/>
+        Enter a temporary master password here if you do NOT want to store it. 
+	You need to re-enter it every time you start iMacros and use a website 
+	password for the first time. More secure, but less convenient.
+        <div class="radio-description">
+          <button onclick="enterTempKey();">Enter Master Password</button>
+        </div>
+      </div>
+      <div style="margin-top:30px;">
+          Note: The encryption can be also changed in each macro with SET 
+	  !ENCRYPTION NO / STOREDKEY / TMPKEY
+      </div>
+      <div style="margin-top:10px;">
+          Create or decrypt password strings manually:
+          <a href="javascript:link('http://www.iopus.com/imacros/support/passwordtool2/')">
+          Password Tool Page</a>
+      </div>
+      <div style="margin-top:12px;margin-left:60px;margin-bottom:7px">
+	  <a href="javascript:link('http://wiki.imacros.net/!ENCRYPTION')">
+          More info about encryption</a>
+      </div>
+    </div>
+    <span id="test"></span>
+  </body>
+</html>

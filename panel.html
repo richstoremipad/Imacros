@@ -1,0 +1,118 @@
+ <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="skin/common.css" />
+    <link rel="stylesheet" type="text/css" href="skin/panel.css" />
+    <script src="version.js" > </script>
+    <script src="utils.js" > </script>
+    <script src="panel.js"> </script>
+  </head>
+  <body oncontextmenu="return false">
+
+    <div id="mole">
+
+      <div class="vbox">
+        <div class="centered">
+          <div id="tree-view">
+            <iframe id="tree-iframe" src="treeView.html"></iframe>
+          </div>
+        </div>
+
+        <div id="buttons" class="vbox">
+
+          <div id="action-buttons" class="hbox centered">
+            <div id="play-pause-box" class="hbox">
+              <div id="play-button" class="button"
+                   onclick="play();"
+                   orgtitle="Play macro"
+                   title="Play macro">
+                <span>Play</span>
+              </div>
+              <div id="pause-button" class="button" collapsed="true"
+                   onclick="pause();" title="Pause replaying">
+                <span>Pause</span>
+              </div>
+            </div>
+            <div id="record-stop-box" class="hbox">
+              <div id="record-button" class="button"
+                   onclick="record();" title="Record macro">
+                <span>Record</span>
+              </div>
+              <div id="stop-button" class="button" collapsed="true"
+                   onclick="stop();" title="Stop action">
+                <span>Stop</span>
+              </div>
+            </div>
+          </div>
+
+          <div  id="loop-box" class="vbox">
+            <div class="hbox centered">
+              <div id="loop-button" class="button"
+                   onclick="playLoop();" title="Play macro repeatedly">
+                <span>Play loop</span>
+              </div>
+            </div>
+            <div class="hbox centered">
+              <div class="hbox" style="font-size:10px">
+                Current:
+                <input id="current-loop" class="loop-value"
+                       type="number"
+                       onkeypress="return checkNumberKey(event)"
+                       value="1"/>
+                Max:
+                <input id="max-loop" class="loop-value"
+                       type="number"
+                       onkeypress="return checkNumberKey(event)"
+                       value="3"/>
+              </div>
+            </div>
+          </div>
+          
+          <div class="hbox centered">
+            <div class="vbox">
+              <div>
+                <div id="edit-button" class="button"
+                     onclick="edit();"
+                     title="Edit selected macro"
+                     origtitle="Edit selected macro">
+                  <span>Edit Macro</span>
+                </div>
+              </div>
+              <div class="hbox centered">
+                <div id="settings-button" class="button"
+                     onclick="link('options.html');"
+                     title="Open preference page">
+                  <span>Preferences</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div> <!-- /buttons -->
+
+        
+        <div id="logo-and-links" "hbox">
+          <div class="centered hbox">
+            <div id="logo-image" >
+              <img src="skin/logo128.png" style="width:70px;height:70px;"/>
+            </div>
+            <div id="links" class="vbox">
+              <div class="panel-link">
+                <a href="javascript:link('http://www.iopus.com/imacros/chrome/')"> Home </a>
+              </div>
+              <div class="panel-link">
+                <a href="javascript:link('http://wiki.imacros.net/iMacros_for_Chrome')"> Wiki </a>
+              </div>
+              <div class="panel-link">
+                <a href="javascript:link('http://forum.iopus.com/viewforum.php?f=21')"> Forum </a>
+              </div>
+            </div>
+          </div>
+        </div> <!-- logo and links -->
+        
+      </div>
+      
+    </div> <!-- mole -->
+    
+  </body>
+</html>
+

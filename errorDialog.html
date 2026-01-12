@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>iMacros Error</title>
+    <link rel="stylesheet" type="text/css"
+          href="skin/common.css" />
+    <link rel="stylesheet" type="text/css"
+          href="skin/errorDialog.css" />
+    <script>
+function $(id) {
+    return document.getElementById(id);
+}
+
+function edit() {
+    window.opener.edit(args.macro);
+    window.close();
+}
+
+window.addEventListener("load", function(event) {
+    if (args) {
+        $("message").innerHTML = args.message;
+    }
+}, true);
+
+    </script>
+  </head>
+  <body>
+    <div id="message"></div>
+    <div id="buttons">
+        <div id="edit-button" class="button"
+             onclick="edit()">
+          <span>Edit</span>
+        </div>
+        <div id="close-button" class="button"
+             onclick="window.close()">
+          <span>Close</span>
+        </div>
+    </div>
+  </body>
+</html>

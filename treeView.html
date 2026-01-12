@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>iMacros</title>
+    <link rel="stylesheet" type="text/css"
+          href="skin/treeView.css" />
+    <script src="treeView.js"></script>
+    <script src="utils.js"></script>
+
+    <script>
+// class names for tree functions in mktree.js
+var treeClass = "tree";
+var nodeClosedClass = "folderClosed";
+var nodeOpenClass = "folderOpen";
+var nodeBulletClass = "macro";
+var nodeLinkClass = "bullet";
+    </script>
+    <script src="mktree.js"></script>
+
+  </head>
+  <body>
+    <div id="context-menu" hidden="true">
+      <ul class="context-menu-ul">
+        <!-- <li><a id="context-run" href="#">Run</a></li> -->
+        <li><a id="context-edit"
+               href="javascript:ContextMenu.edit()">Edit Macro</a></li>
+        <!-- <li class="context-menu-sep"></li> -->
+        <li><a id="context-rename"
+               href="javascript:ContextMenu.rename()">Rename</a></li>
+        <li><a id="context-delete"
+               href="javascript:ContextMenu.remove()">Remove</a></li>
+      </ul>
+    </div>
+    
+    <ul id="tree" class="tree">
+    </ul>
+    <div id="imacros-bookmark-div" style="display:none">
+      <textarea id="imacros-macro-container"></textarea>
+    </div>
+  </body>
+</html>
