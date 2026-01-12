@@ -1,0 +1,36 @@
+/*</JasobNoObfs>*/
+/*
+(c) Copyright 2009 iOpus Software GmbH - http://www.iopus.com
+*/
+/*</JasobNoObfs>*/
+
+/* styles for error dialog */
+
+
+#message {
+    background-color: #ffebeb;
+    padding: 2px !important;
+    border: 1px solid black;
+    min-width: 200px;
+    min-height: 50px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#message[msgtype="message"] {
+    background-color: #a8ffab;
+}
+
+#buttons {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+}
+
+
+#edit-button {
+    background-image: url("edit.png");
+}
+
+#close-button {
+    background-image: url("cancel.png");
+}

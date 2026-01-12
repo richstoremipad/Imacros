@@ -1,0 +1,67 @@
+/*</JasobNoObfs>*/
+/*
+(c) Copyright 2009 iOpus Software GmbH - http://www.iopus.com
+*/
+/*</JasobNoObfs>*/
+
+/* common styles for all dialogs */
+body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction:normal;
+    padding: 0px;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 12px;
+}
+
+.button {
+    display: -webkit-box;
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 20px;
+    padding-right: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid white;
+    -webkit-border-radius: 3px;
+}
+
+.button[collapsed="true"] {
+    display: none;
+}
+
+.button:hover {
+    background-color: #fafafa;
+    border: 1px solid #aaaaaa;
+    -webkit-border-radius: 3px;
+    text-decoration: none;
+    cursor: hand;
+}
+
+.button[disabled="true"]:hover {
+    background-color: white;
+    border: 1px solid white;
+    cursor: default;
+}
+
+.box {
+    display: -webkit-box;
+}
+
+.vbox {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.hbox {
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+.centered {
+    -webkit-box-pack: center;
+}

@@ -1,0 +1,57 @@
+/*
+(c) Copyright 2009 iOpus Software GmbH - http://www.iopus.com
+*/
+
+/* styles for options dialog */
+
+
+body {
+    padding: 10px;
+    border: thin solid black;
+}
+
+#title {
+    display: -webkit-box;
+    font-size: 14px;
+    margin: 20px;
+    height: 48px !important;
+    padding-left: 60px;
+    -webkit-box-align: center;
+    font-weight: bold;
+    background-image: url("logo48.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.settings-container {
+    border: thin solid black;
+    -webkit-border-radius: 5px;
+    margin: 25px;
+    padding: 5px;
+    width: 60%;
+    min-width: 400px;
+}
+
+.settings-container > span {
+    display: -webkit-box;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    margin-top: -22px;
+}
+
+.radio-container {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.radio-container:hover {
+    background-color: #fafafa;
+}
+
+.radio-description {
+    margin-left: 30px;
+    font-size: 11px;
+    margin-top: 5px;
+}
+

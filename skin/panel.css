@@ -1,0 +1,122 @@
+/*
+(c) Copyright 2009 iOpus Software GmbH - http://www.iopus.com
+*/
+
+/* styles for toolstrip area */
+
+/* logo image's div */
+#logo-image {
+    display: -webkit-box;
+}
+
+.panel-link {
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+
+#logo-and-links {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    margin-bottom: 0px;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+}
+
+#links {
+}
+
+#container {
+    -webkit-box-align: center;
+}
+
+
+#mole {
+    -webkit-box-orient: vertical;
+}
+
+
+.loop-value {
+    width: 20px;
+    font-size: 9px;
+    border: 1px solid black;
+}
+
+
+#loop-box {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+
+#action-buttons {
+    /* margin-bottom: 10px; */
+}
+
+#play-button {
+    background-image: url("play.png");
+}
+
+#play-button[disabled="true"] {
+    background-image: url("play-disabled.png");
+}
+
+#edit-button {
+    background-image: url("edit.png");
+}
+
+#edit-button[disabled="true"] {
+    background-image: url("edit-disabled.png");
+}
+
+
+#pause-button {
+    background-image: url("pause.png");
+}
+
+#unpause-button {
+    background-image: url("play.png");
+}
+
+#record-button {
+    background-image: url("record.png");
+}
+
+#stop-button {
+    background-image: url("stop.png");
+}
+
+
+#settings-button {
+    background-image: url("settings.png");
+}
+
+#loop-button {
+    background-image: url("loop.png");
+}
+
+#loop-button[disabled="true"] {
+    background-image: url("loop-disabled.png");
+}
+
+.centered {
+    display: -webkit-box;
+    -webkit-box-pack: center;    
+}
+
+
+#tree-view {
+    margin: 0px;
+    padding: 0px;
+    width: 95%;
+    height: 50%;
+}
+
+#tree-iframe {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 95%;
+    border: thin solid black;
+    -webkit-border-radius: 4px;
+}
